@@ -1,50 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
 .event__wrapper{
     background-image: url('./f.jpg');
-    
-
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
-    border: 0;
-    
+    border: 0;   
 }
 
 .event__form__wrapper{  
     margin-left: 75px;
     position: relative;
-    top: 100px;
-    
-    
+    top: 100px;   
 }
-
-.event__header{
-    
-    background-color: rebeccapurple;
-    color: white;
-    font-size: 35px;
-    font-style: initial;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 500px;
-    margin-right: 500px;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    font-family: 'Open Sans', sans-serif;
-    
-}
-
 .select__events{
     width: 400px;
     padding-left: 20px;
     padding-top: 30px;
     display: inline-block;
-    margin-right: 30px;
-    
+    margin-right: 30px;   
 }
 
 .event__form{
@@ -54,8 +27,7 @@
     border-radius: 0px 0px 10px 10px;
     border-style:double;
     background-color: l;
-    margin-right: 550px;
-    
+    margin-right: 550px;  
 }
 
 .wrapper__select__button__newEvent{
@@ -71,7 +43,6 @@
     background-color: hotpink;
     color: white;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .new__event__lbl{
@@ -151,6 +122,31 @@
     top: 92px;
     right: 20px;
 }
+.event__header{
+    
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 35px;
+    font-style: initial;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 500px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.type{
+    color: #1c7ab0;
+    stroke: black;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+   
+}
 
 .event{
 
@@ -163,10 +159,8 @@
     border-radius: 5px;
     border-style: groove;
     border-color: #1c7ab0;
-    
-    
+ 
 }
-
 .date{
     color:#32354d;
     font-weight: 10px;
@@ -175,13 +169,6 @@
     margin-left: 40px;
 }
 
-.type{
-    color: #1c7ab0;
-    stroke: black;
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
-   
-}
 
 .notes{
     resize: none;

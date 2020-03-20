@@ -12,12 +12,14 @@ const BabyForm = ({ onSubmit}) =>{
 
   return (
     <div className="form">
-              <input type="text" placeholder="Name" className="lbl_Name" value={value1} onChange={e => changeValue1(e.target.value)}               />
-              <input type="text" placeholder="Last Name" className="lbl_LastName" value={value2} onChange={e => changeValue2(e.target.value)}/>
+              <input type="text" placeholder="Name" className="lbl_Name" value={value1} onChange={holi => changeValue1(holi.target.value)}               />
+              <input type="text" placeholder="Last Name" className="lbl_LastName" value={value2} onChange={holi => changeValue2(holi.target.value)}/>
               <Link to="/"><button type="submit" className="btn_addBaby" 
               onClick={() => 
               {
-                onSubmit(uuidv4(), value1, value2 );
+                onSubmit(uuidv4(), 
+                value1, 
+                value2 );
                 }
               }> 
               <label className="addTxt"> {'+'}</label> 

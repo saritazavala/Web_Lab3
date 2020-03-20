@@ -2,81 +2,80 @@
     background-image: url('./f1.jpg');
     background-size: auto;
     width: 100%;
-    height: 800px;
-    
-    
+    height: 800px;   
 }
+
+.header{
+    margin-bottom: -100px;
+    background-color: teal;
+    color: white;
+    border-style: double;
+    border-color: black;
+    font-size: 30px;
+    font-style: initial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: -300px; 
+}
+
 
 .form-wrapper{  
     margin-left: 450px;
     margin-right: 50px;
     position: relative;
     top: 100px;
-    
-    
-}
-
-.header{
-    margin-bottom: -100px;
-    background-color: black;
-    color: white;
-    font-size: 30px;
-    font-style: initial;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 500px;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-    margin-left: -300px;
-
-    
+   
 }
 
 .form{
-    background-color: rgb(110, 174, 238);
+    border-color: black;
+    border-style: double;
+    background-color: royalblue;
     float: left;
-    height: 400px;
-    width: 500px;
+    height: 250px;
+    width: 400px;
     border-radius: 0px 0px 10px 10px;
     margin-left: -300px;
     margin-top: 105px;
     
 }
-
-.btn_addBaby{
-    border-radius: 100px;
-    border-style: none;
-    width: 70px;
-    height: 70px;
-    background-color: plum;
-    margin-left: 385px;
-    font-size: 60px;
-    text-align: center;
-
-    transition: transform .2s;
-}
-
 .addTxt{
     position: relative;
     bottom: 8px;
-    color: white;
+    color:wheat
 }
-
-.btn_addBaby:hover{
-    transform: scale(1.2);
-}
-
-
 .lbl_Name{
     width: 80%;
     height: 10%;
     box-sizing: content-box;
-    border-radius: 20px;
-    border-style: none;
+    border-radius: 10px;
+    border-style: double;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 30px;
     margin-left: 50px;
     font-size: 20px;
+}
+
+.btn_addBaby:hover{
+    transform: scale(1);
+}
+
+.btn_addBaby{
+    border-radius: 50px;
+    border-style: groove;
+    border-color: black;
+    width: 50px;
+    height: 48px;
+    background-color: plum;
+    margin-left: 300px;
+    font-size: 50px;
+    margin-top: -50px;
+    float: inline-start;
+    text-align: center;
+
 }
 
 .lbl_LastName{
@@ -87,7 +86,7 @@
     border-radius: 20px;
     border-style: none;
     text-align: center; 
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 40px;
     margin-left: 50px;
 }

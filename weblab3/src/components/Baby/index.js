@@ -8,13 +8,9 @@ const Baby = () => (
   <div className="wrapper">
       <div className="form-wrapper">
           <div className="header">
-              <label className="text">
-                  {'Add Baby'}
-                  </label>
+              <label className="text"> {'Add Baby'}</label>
           </div>
           <BabyForm />
       </div>   
   </div>
-);
-
-export default Baby;
+);export default Baby;

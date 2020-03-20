@@ -26,17 +26,14 @@ const byId = (state = {}, action) => {
       return [ action.payload.id, ...state  ];
     } else if(action.type === types.DELETE_EVENT){
       return [...state].filter(event => event != action.payload)
-    }
-    return state;
+    }return state;
   };
 
 const event = combineReducers({
   byId,
   order,
 
-});
-
-export default event;
+});export default event;
 
 export const getEvent = (state, id) =>  state.byId[id];
 export const getEvents = (state, babyId) => state.order.map(
