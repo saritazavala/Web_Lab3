@@ -12,32 +12,30 @@ const BabyForm = ({ onSubmit}) =>{
 
   return (
     <div className="form">
-              <input type="text" placeholder="Name" className="lbl_Name" 
-               value={value1}
-               onChange={e => changeValue1(e.target.value)}
-               />
-              <input type="text" placeholder="Last Name" className="lbl_LastName"
-              value={value2}
-              onChange={e => changeValue2(e.target.value)}
-              />
+              <input type="text" placeholder="Name" className="lbl_Name" value={value1} onChange={e => changeValue1(e.target.value)}               />
+              <input type="text" placeholder="Last Name" className="lbl_LastName" value={value2} onChange={e => changeValue2(e.target.value)}/>
               <Link to="/"><button type="submit" className="btn_addBaby" 
-              onClick={() => {onSubmit(uuidv4(), value1, value2 );}}> 
-              <label className="addTxt">
-                {'+'}
-                </label> 
+              onClick={() => 
+              {
+                onSubmit(uuidv4(), value1, value2 );
+                }
+              }> 
+              <label className="addTxt"> {'+'}</label> 
               </button>
               </Link>    
           </div>
   )
 };
-
    const dispatchStateToProps = () => (
      dispatch => ({
        onSubmit(id, name, lastName) {
-         dispatch(actions.addBaby(id, name, lastName));
+         dispatch(actions.addBaby(
+           id, 
+           name, 
+           lastName)
+           );
          dispatch(actions.selectBaby(''))
        },
        
      })
-   );
-   export default connect(undefined, dispatchStateToProps)(BabyForm);
+   ); export default connect(undefined, dispatchStateToProps)(BabyForm);

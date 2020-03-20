@@ -9,7 +9,7 @@ const Baby = () => (
       <div className="form-wrapper">
           <div className="header">
               <label className="text">
-                  {'Babies'}
+                  {'Add Baby'}
                   </label>
           </div>
           <BabyForm />

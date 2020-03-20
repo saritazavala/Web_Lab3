@@ -5,8 +5,10 @@ import { BrowserRouter, Route} from 'react-router-dom';
 import { configureStore } from '../../store';
 import Baby from '../Baby'
 import Events from '../Events'
-
 const store = configureStore();
+/**
+ * App starts
+ */
 
 const App = () => (
     <Provider store={store}>
@@ -19,6 +21,4 @@ const App = () => (
     </Provider>
 
 );
-
-
 export default App;
