@@ -1,0 +1,19 @@
+.babies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 200px;
+    margin-right: 900px;
+    left: 50px;
+    background-color: #445366;
+    position: fixed;
+    transition: 0.25s;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.warning-title{
+    color: #CAF8FB;
+}
+

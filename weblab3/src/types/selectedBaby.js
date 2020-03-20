@@ -1,1 +1,1 @@
-//Sara Zavala 18893
+export const BABY_SELECTED = 'BABY_SELECTED';
