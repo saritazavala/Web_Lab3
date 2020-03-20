@@ -1,5 +1,7 @@
 # Web_Lab3
-The events a baby can do are:
+- yarn add react
+- yarn add react-redux
+## The events a baby can do are:
 - pee
 - poop
 - sleep
