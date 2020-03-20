@@ -1,19 +1,204 @@
-.events {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.event__wrapper{
+    background-image: url('./f.jpg');
+    
+
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+.event__form__wrapper{  
+    margin-left: 75px;
+    position: relative;
+    top: 100px;
+    
+    
+}
+
+.event__header{
+    
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 35px;
+    font-style: initial;
+    position: relative;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 600px;
-    right: 120px;
-    background-color: #a5e680;;
-    position: fixed;
-    border: double;
-    padding-left: 25px;
-    justify-content: left;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 500px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
-
-.warning-title{
-    color: black
+.select__events{
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    
 }
 
+.event__form{
+    background: lightcoral;
+    height: 500px;
+    width: 495px;
+    border-radius: 0px 0px 10px 10px;
+    border-style:double;
+    background-color: l;
+    margin-right: 550px;
+    
+}
+
+.wrapper__select__button__newEvent{
+    display: block;
+    background-color: lightsalmon;
+}
+
+.add__baby__btn{
+    margin-left: 5px;
+    border-radius: 3px;
+    width: 60px;
+    height: 40px;
+    background-color: hotpink;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.new__event__lbl{
+    
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+}
+
+.events__wrapper{
+    background-color: rebeccapurple;
+    display: inline-block;
+    width: 550px;
+ 
+}
+
+.types__annotations__wrapper{
+    
+    margin-top: 60px;
+    display: inline-block;  
+    width: 195px;
+    font-size: 25px;
+}
+
+.select__types{
+
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.annotations__txtarea{
+    
+    margin-top: 25px;
+    margin-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    resize: none;
+    height: 100px;
+    
+}
+
+.types__annotations__wrapper{
+    margin-top: 120px;
+    float: right;
+    background-color: #ffd2e4;
+    height: 250px;
+    width: 230px;
+    border-radius: 0px 0px 10px 0px;
+    
+}
+
+.create__event__btn{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #f3e3ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.event__title__wrapper{
+    border-style: double;
+    width: 226px;
+    height: 50px;
+    float: right;
+    position: absolute;
+    top: 92px;
+    right: 20px;
+}
+
+.event{
+
+    height: 370px;
+    overflow: scroll;
+    
+}
+.individual__event{
+    background-color: #bff0ff;
+    border-radius: 5px;
+    border-style: groove;
+    border-color: #1c7ab0;
+    
+    
+}
+
+.date{
+    color:#32354d;
+    font-weight: 10px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+}
+
+.type{
+    color: #1c7ab0;
+    stroke: black;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+.notes{
+    resize: none;
+    height: 100px;
+    background:wheat;
+    border-radius: 5px;
+    border-color: white;
+    border-style: double;
+    border-width: 5px;
+    color: #29576e;
+    
+}
+
+.delete__event__btn{
+    border-radius: 25px;
+   
+    border: none;
+    float: right;
+    color: white;
+}

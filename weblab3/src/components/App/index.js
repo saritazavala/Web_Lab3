@@ -1,26 +1,24 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { configureStore } from '../../store';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import AllBabies from './AllBabies';
-import AllEvents from './AllEvents';
+import { BrowserRouter, Route} from 'react-router-dom';
 
+import { configureStore } from '../../store';
+import Baby from '../Baby'
+import Events from '../Events'
 
 const store = configureStore();
 
 const App = () => (
-  <Provider store={store}>
-  <Router>
-    <div className="App">
-      <Nav />
-      <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/allbabies" component={AllBabies}/>
-        <Route path="/allEvents" component={AllEvents} /> 
-      </Switch>     
-    </div>
-  </Router>
-</Provider>
+    <Provider store={store}>
+       <BrowserRouter>
+       <div>
+          <Route path= "/" exact component={Events} />
+          <Route path="/Baby" component= {Baby} />
+        </div>
+        </BrowserRouter>
+    </Provider>
+
 );
+
 
 export default App;

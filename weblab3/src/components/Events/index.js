@@ -1,36 +1,23 @@
-import range from 'lodash/range';
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { useState } from 'react';
 
-import './styles.css';
-import * as selectors from '../../reducers';
-import * as actions from '../../actions/events';
-import Event from '../Event';
 
-const Events = ({ number }) => (
-  <div className="events">
-    {
-      number.length === 0 ? (
-        <h3 className="warning-title">
-          {'No hay actividades '}
-        </h3>
-      ) : (
-        (number).map(
-          index => (
-            <Event
-              key={index}
-              index={index}
-            />
-          ),
-        )
-      )
-    }
-  </div>  
+
+import './styles.css'
+import EventForm from './eventForm';
+
+const events = () =>(
+    <div className="event__wrapper">
+    <div className="event__form__wrapper">
+        <div className="event__header">
+            <label className="event__text">
+                {'Babies'}
+            </label>
+        </div>
+        <EventForm/>
+    </div>   
+</div>
+        
+    
 );
 
-
-export default connect(
-  state => ({
-    number: selectors.getEvents(state),
-  }),
-)(Events);
+export default events;
